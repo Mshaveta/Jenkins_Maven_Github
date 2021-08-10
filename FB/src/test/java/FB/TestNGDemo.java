@@ -13,7 +13,7 @@ public class TestNGDemo {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		System.out.println("Title-"+ driver.getTitle());
-		 
+		 System.out.println("Title-"+ driver.getCurrentUrl());
 		driver.get("https://opensource-demo.orangehrmlive.com/");
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
 		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
